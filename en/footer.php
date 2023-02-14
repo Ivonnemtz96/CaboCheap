@@ -64,7 +64,7 @@
         <div class="container">
             <div class="copyright-inner rounded p-3 d-md-flex align-items-center justify-content-between">
                 <div class="copyright-text">
-                    <p class="m-0 white">2022 Cabo Gear. Todos los derechos reservados. Creado por <a href="https://www.bananagroup.mx/">Banana Group</a></p>
+                    <p class="m-0 white">2022 Cabo Gear. Todos los derechos reservados. Design by <a href="https://www.bananagroup.mx/">Banana Group</a></p>
                 </div>
                 <div class="social-links">
                     <ul>

@@ -60,7 +60,7 @@ include('indexcontroller.php');
     <?php include_once($lenguaje."/reviews.php"); ?>
     
     
-    <?php include_once($_SERVER["DOCUMENT_ROOT"]."/modulos/footer.php"); ?>
+    <?php include_once($lenguaje."/footer.php"); ?>
     
     
     <div id="back-to-top">
