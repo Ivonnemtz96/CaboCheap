@@ -1,4 +1,5 @@
 <?php
+    include('indexcontroller.php');
     require_once($_SERVER["DOCUMENT_ROOT"]."/config.php");
 
     ini_set('display_errors', 1);
