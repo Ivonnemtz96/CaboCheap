@@ -4,7 +4,7 @@
             <ul>
                 <li><a href="#" class="white"><i class="icon-location-pin white"></i> Los Cabos, Baja California Sur, México.</a>
                 </li>
-                <li><a href="#" class="white"><i class="icon-clock white"></i> Lunes a Viernes: 10 AM – 5 PM | Sábados: 10 AM - 1 PM</a></li>
+                <li><a href="#" class="white"><i class="icon-clock white"></i> Monday to Friday: 10 AM – 5 PM | Saturday: 10 AM - 1 PM</a></li>
             </ul>
         </div>
         <div class="links float-right">

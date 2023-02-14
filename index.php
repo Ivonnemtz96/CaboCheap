@@ -1,6 +1,6 @@
 <?php
 include('indexcontroller.php');
-    require_once($_SERVER["DOCUMENT_ROOT"]."/config.php");
+    include_once($_SERVER["DOCUMENT_ROOT"]."/config.php");
 
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
@@ -20,7 +20,7 @@ include('indexcontroller.php');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cabo Cheap Tours</title>
 
-    <?php require_once($_SERVER["DOCUMENT_ROOT"]."/modulos/css.php"); ?>
+    <?php include_once($_SERVER["DOCUMENT_ROOT"]."/modulos/css.php"); ?>
     
 </head>
 
@@ -32,8 +32,8 @@ include('indexcontroller.php');
     
     
     <header class="main_header_area">
-        <?php require_once($_SERVER["DOCUMENT_ROOT"]."/modulos/top.php"); ?>
-        <?php require_once($_SERVER["DOCUMENT_ROOT"]."/modulos/menu.php"); ?>
+        <?php include_once($lenguaje."/top.php"); ?>
+        <?php include_once($lenguaje."/menu.php"); ?>
     </header>
     
     <div class="tet"></div>
@@ -44,9 +44,9 @@ include('indexcontroller.php');
         <div class="container">
             <div class="banner-in">
                 
-                <?php require_once($_SERVER["DOCUMENT_ROOT"]."/modulos/banner.php"); ?>
+                <?php include_once($lenguaje."/banner.php"); ?>
                 
-                <?php require_once($_SERVER["DOCUMENT_ROOT"]."/modulos/categorias.php"); ?>
+                <?php include_once($lenguaje."/categorias.php"); ?>
                 
                 
                 
@@ -55,19 +55,19 @@ include('indexcontroller.php');
         </div>
     </section>
     
-    <?php require_once($_SERVER["DOCUMENT_ROOT"]."/modulos/about.php"); ?>
-    <?php require_once($_SERVER["DOCUMENT_ROOT"]."/modulos/tours.php"); ?>
-    <?php require_once($_SERVER["DOCUMENT_ROOT"]."/modulos/reviews.php"); ?>
+    <?php include_once($_SERVER["DOCUMENT_ROOT"]."/modulos/about.php"); ?>
+    <?php include_once($_SERVER["DOCUMENT_ROOT"]."/modulos/tours.php"); ?>
+    <?php include_once($_SERVER["DOCUMENT_ROOT"]."/modulos/reviews.php"); ?>
     
     
-    <?php require_once($_SERVER["DOCUMENT_ROOT"]."/modulos/footer.php"); ?>
+    <?php include_once($_SERVER["DOCUMENT_ROOT"]."/modulos/footer.php"); ?>
     
     
     <div id="back-to-top">
         <a href="#"></a>
     </div>
     
-    <?php require_once($_SERVER["DOCUMENT_ROOT"]."/modulos/js.php"); ?>
+    <?php include_once($_SERVER["DOCUMENT_ROOT"]."/modulos/js.php"); ?>
     
 </body>
 

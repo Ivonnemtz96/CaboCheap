@@ -1,5 +1,5 @@
 <?php
-include('indexcontroller.php');
+
 require_once($_SERVER["DOCUMENT_ROOT"] . "/config.php");
 
 ini_set('display_errors', 1);
@@ -81,8 +81,8 @@ if (isset($_REQUEST['submit'])) {
 
 
     <header class="main_header_area">
-        <?php require_once($_SERVER["DOCUMENT_ROOT"] . $lenguaje."/modulos/top.php"); ?>
-        <?php require_once($_SERVER["DOCUMENT_ROOT"] . $lenguaje."/modulos/menu.php"); ?>
+        <?php require_once($_SERVER["DOCUMENT_ROOT"] . "/modulos/top.php"); ?>
+        <?php require_once($_SERVER["DOCUMENT_ROOT"] . "/modulos/menu.php"); ?>
     </header>
 
 
@@ -205,7 +205,7 @@ if (isset($_REQUEST['submit'])) {
     </section>
 
 
-    <?php require_once($_SERVER["DOCUMENT_ROOT"] . $lenguaje."/modulos/footer.php"); ?>
+    <?php require_once($_SERVER["DOCUMENT_ROOT"] . "/modulos/footer.php"); ?>
 
 
     <div id="back-to-top">
