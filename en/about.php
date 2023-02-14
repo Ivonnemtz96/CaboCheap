@@ -10,7 +10,7 @@
                 </div>
                 <div class="col-lg-6 mb-4 ps-4">
                     <div class="about-content text-center text-lg-start mb-4">
-                        <h4 class="theme d-inline-block mb-0">¿Quiénes somos?</h4>
+                        <h4 class="theme d-inline-block mb-0">About Us</h4>
                         <h2 class="border-b mb-2 pb-1">Una agencia de tours en Los Cabos</h2>
                         <p class="border-b mb-2 pb-2">Más de una década nos hemos esmerado en ofrecer la mejor selección de excursiones con las mejores tarifas. Y es por eso que llevamos más de 10 años siendo la mejor opción para los viajeros, vive con noostros toda una experiencia.</p>
                         <div class="about-listing">

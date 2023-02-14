@@ -1,7 +1,7 @@
 <div class="row align-items-center">
     <div class="col-lg-6 mb-4">
         <div class="banner-content text-lg-start text-center">
-            <h4 class="theme mb-0">Explora Los Cabos</h4>
+            <h4 class="theme mb-0">Enjoy Los Cabos</h4>
             <h1>Comienza a planificar</h1>
             <p class="mb-4">el viaje <b>de tus sueños hoy</b>, tours para todas las edades!</p>
             <div class="book-form">
