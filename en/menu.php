@@ -12,16 +12,16 @@
                 <div class="navbar-collapse1 d-flex align-items-center" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav" id="responsive-menu">
                         
-                        <li><a href="/">Inicio</a></li>
-                        <li><a href="/#about">Quienes somos</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#about">About Us</a></li>
                         <li><a href="/tours">Tours</a></li>
-                        <li><a href="/contacto">Contacto</a></li>
+                        <li><a href="/contacto">Contact</a></li>
                         
                     </ul>
                 </div>
                 <div class="register-login d-flex align-items-center">
                     
-                    <a href="/tours" class="nir-btn white">Reservar!</a>
+                    <a href="/tours" class="nir-btn white">Book now!</a>
                 </div>
                 <div id="slicknav-mobile"></div>
             </div>
