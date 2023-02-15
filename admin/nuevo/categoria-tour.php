@@ -231,7 +231,7 @@ if (isset($_REQUEST['submit']) and $_REQUEST['submit'] != "") {
                                                             <td><?php echo $y ?></td>
                                                             <td><img src="/upload/categorias/<?php echo (strftime("%Y/%m", strtotime(($caracteristicas['fr']))));?>/<?php echo ($caracteristicas['imagen']) ?>.png" alt=""></td>
                                                             <td><?php echo $caracteristicas['nombre']; ?></td>
-                                                            <td><?php echo $caracteristicas['nombre']; ?></td>
+                                                            <td><?php echo $caracteristicas['nombreIn']; ?></td>
                                                             <td>
                                                             </td>
                                                         </tr>
