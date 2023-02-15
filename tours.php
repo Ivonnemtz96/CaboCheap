@@ -45,7 +45,7 @@
         <a href="#"></a>
     </div>
     
-    <?php require_once($_SERVER["DOCUMENT_ROOT"]."/modulos/js.php"); ?>
+    <?php require_once($_SERVER["DOCUMENT_ROOT"].'/modulos/js.php'); ?>
     
 </body>
 

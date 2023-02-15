@@ -23,14 +23,13 @@
                                 <div class="trend-content position-relative text-md-start text-center">
                                     <small><?php echo ($tour['duracion']); ?> hours</small>
                                     <h3 class="mb-1">
-                                        <a href="/tour?id=<?php echo ($tour['id']); ?>"><?php echo ($tour['nombre_ingles']); ?>
+                                        <a href="/tour?id=<?php echo ($tour['id']); ?>"><?php echo ($tour['nombre']); ?>
                                             hours
                                         </a>
                                     </h3>
                                     <h6 class="theme mb-0"></i> <?php echo ($catSel['nombre']); ?></h6>
                                     <p class="mt-2 mb-0">
-                                        <?php echo substr(strip_tags($tour['descripcion_ingles']), 0, 130); ?>...
-                                    </p>
+                                        <?php echo substr(strip_tags($tour['descripcion']), 0, 130); ?>...</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-3">

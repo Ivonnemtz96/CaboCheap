@@ -56,7 +56,7 @@ include('indexcontroller.php');
     </section>
     
     <?php include_once($lenguaje."/about.php"); ?>
-    <?php include_once($_SERVER["DOCUMENT_ROOT"]."/modulos/tours.php"); ?>
+    <?php include($lenguaje."/tours.php"); ?>
     <?php include_once($lenguaje."/reviews.php"); ?>
     
     

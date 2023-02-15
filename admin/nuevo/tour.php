@@ -91,7 +91,9 @@ if (isset($_REQUEST['submit']) and $_REQUEST['submit'] != "") {
         if ($casasCount[0]['total'] < 1000) {
             $data    =    array(
                 'nombre' => $nombre,
+                'nombre_ingles' => $nombre_ingles,
                 'descripcion' => $descripcion,
+                'descripcion_ingles' => $descripcion_ingles,
                 'capacidad' => $capacidad,
                 'categoria' => $categoria,
                 'duracion' => $duracion,
@@ -244,9 +246,6 @@ if (isset($_REQUEST['submit']) and $_REQUEST['submit'] != "") {
                     </div>
 
                     <div class="row">
-
-
-
                         <div class="col-md-12 col-lg-12">
                             <div class="card">
                                 <div class="card-header">
@@ -264,6 +263,17 @@ if (isset($_REQUEST['submit']) and $_REQUEST['submit'] != "") {
                                                     </div>
                                                 </div>
                                             </div>
+                                            <!-- Info Inglés -->
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>Nombre en inglés*</label>
+                                                    <input name="nombre_ingles" class="form-control" type="text" required>
+                                                    <div class="invalid-feedback">
+                                                        Por favor ingresa nombre del tour.
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label>Categoria*</label>
@@ -349,8 +359,19 @@ if (isset($_REQUEST['submit']) and $_REQUEST['submit'] != "") {
                                                         Por favor ingresa la descripción.
                                                     </div>
                                                 </div>
-
                                             </div>
+
+                                            <!-- Descripción en Inglés -->
+                                            <div class="col-lg-9 col-md-6">
+                                                <div class="form-group">
+                                                    <label>Descripción en Inglés*</label>
+                                                    <textarea id="mytextarea2" name="descripcion_ingles" class="form-control" cols="5" rows="2" required></textarea>
+                                                    <div class="invalid-feedback">
+                                                        Por favor ingresa la descripción.
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                             <div class="col-lg-3 col-md-6">
                                                 <div class="form-group">
                                                     <label>Imagen de portada*</label>
@@ -475,7 +496,10 @@ if (isset($_REQUEST['submit']) and $_REQUEST['submit'] != "") {
     <script src="https://cdn.tiny.cloud/1/m5ug66f7s0shi1wbuoq6bdea4aeasit12v3eohxa2w823qzg/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script type="text/javascript">
         tinymce.init({
-            selector: '#mytextarea'
+            selector: '#mytextarea',
+        });
+        tinymce.init({
+            selector: '#mytextarea2',
         });
     </script>
 
