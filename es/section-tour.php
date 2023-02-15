@@ -21,10 +21,10 @@
                             </div>
                             <div class="col-lg-5 col-md-6">
                                 <div class="trend-content position-relative text-md-start text-center">
-                                    <small><?php echo ($tour['duracion']); ?> hours</small>
+                                    <small><?php echo ($tour['duracion']); ?> horas</small>
                                     <h3 class="mb-1">
                                         <a href="/tour?id=<?php echo ($tour['id']); ?>"><?php echo ($tour['nombre']); ?>
-                                            hours
+                                            horas
                                         </a>
                                     </h3>
                                     <h6 class="theme mb-0"></i> <?php echo ($catSel['nombre']); ?></h6>
@@ -42,11 +42,11 @@
                                         <span class="fa fa-star checked"></span>
                                     </div>
                                     <div class="trend-price my-2">
-                                        <span class="mb-0">From</span>
+                                        <span class="mb-0">Desde</span>
                                         <h3 class="mb-0">$<?php echo number_format($tour['precioPromo'], 2); ?></h3>
-                                        <small>Per adult</small>
+                                        <small>Por Adulto</small>
                                     </div>
-                                    <a href="/tour?id=<?php echo ($tour['id']); ?>" class="nir-btn">View More</a>
+                                    <a href="/tour?id=<?php echo ($tour['id']); ?>" class="nir-btn">Ver más</a>
                                 </div>
                             </div>
                         </div>
