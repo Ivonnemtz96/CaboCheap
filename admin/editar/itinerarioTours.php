@@ -48,6 +48,7 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
         
         $data	=	array(
             'descripcion'=>$descripcion,
+            'descripcion_ingles'=>$descripcion_ingles,
             'nombre'=>$nombre,
         );
         $update	=	$db->update('itinerariosTours',$data,array('id'=>($_REQUEST['editId'])));
@@ -152,6 +153,16 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
                                     <div class="form-group">
                                         <label>Descripción</label>
                                         <textarea name="descripcion" class="form-control" cols="5" rows="2" required><?php echo $itinerarioSel['descripcion']; ?></textarea>
+                                        <div class="invalid-feedback">
+                                          Por favor ingresa la descripcion del tour.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>Descripción en inglés</label>
+                                        <textarea name="descripcion_ingles" class="form-control" cols="5" rows="2" required><?php echo $itinerarioSel['descripcion']; ?></textarea>
                                         <div class="invalid-feedback">
                                           Por favor ingresa la descripcion del tour.
                                         </div>

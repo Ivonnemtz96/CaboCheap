@@ -198,6 +198,7 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
                                           #
                                         </th>
                                         <th>Descripción</th>
+                                        <th>Descripción en inglés</th>
                                         <th class="text-rigth">Acción</th>
                                     </tr>
                                 </thead>
@@ -211,6 +212,7 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
                                               <tr>
                                                     <td><?php echo $y ?></td>
                                                     <td><?php echo $item['descripcion']; ?></td>
+                                                    <td><?php echo $item['descripcion_ingles']; ?></td>
                                                     <td class="text-rigth">
                                                         <a href="/admin/editar/itinerario-tour?editId=<?php echo $item['id']; ?>" class="btn btn-icon btn-primary"><i class="far fa-edit"></i></a>
                                                         <a href="/admin/borrar/itinerario-tour?delId=<?php echo $item['id']; ?>" onClick="return confirm('¿Estás seguro? Esto no se puede deshacer');" class="btn btn-icon btn-danger"><i class="fa fa-trash"></i></a>
