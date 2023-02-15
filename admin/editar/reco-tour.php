@@ -44,6 +44,7 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
             extract($_REQUEST);
 			$data	=	array(
 							'descripcion'=>$descripcion,
+							'descripcion_ingles'=>$descripcion_ingles,
 						);
 	       $update	=	$db->update('toursReco',$data,array('id'=>($_REQUEST['editId'])));
     
@@ -133,10 +134,16 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
                     </div>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-sm-3">
+                            <div class="col-md-12">
                                 <div class="form-group">
                                     <label>Descripción</label>
                                     <input name="descripcion" value="<?php echo ($recoSel['descripcion']);?>" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Descripción</label>
+                                    <input name="descripcion_ingles" value="<?php echo ($recoSel['descripcion_ingles']);?>" type="text" class="form-control">
                                 </div>
                             </div>
                         </div>
