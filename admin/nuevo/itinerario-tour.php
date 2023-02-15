@@ -49,6 +49,7 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
 		if($tariCount[0]['total']<1000){
 			$data	=	array(
 							'descripcion'=>$descripcion,
+							'descripcion_ingles'=>$descripcion_ingles,
 							'tour'=>$tour['id'],
 						);
 			$insert	=	$db->insert('toursItinerario',$data);
@@ -163,6 +164,17 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- en inglés -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Descripción en inglés</label>
+                                        <input name="descripcion_ingles" class="form-control" type="text" required>
+                                        <div class="invalid-feedback">
+                                          Por favor ingresa la descripcion del itinerario.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <a href="/admin/editar/tour/?editId=<?php echo $tour['id']; ?>" type="button" class="btn btn-icon icon-left btn-success">
                                 <i class="fas fa-arrow-alt-circle-left"></i> Volver 
@@ -193,9 +205,7 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
                                 <?php $Data = $db->getAllRecords('toursItinerario','*','AND tour='.$tour['id'].' LIMIT '.$tour['itinerarioCount'].'');
                                   if (count($Data)>0){
                                       $y	=	'';
-                                          foreach($Data as $item){
-                                              
-                                                                                            
+                                          foreach($Data as $item){                                           
                                               $y++;
                                               ?>
                                               <tr>
@@ -218,11 +228,6 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
                     </div>
                 </div>
             </div>
-            
-            
-            
-            
-          
         </div>
             
         </section>

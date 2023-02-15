@@ -49,6 +49,7 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
 		if($tariCount[0]['total']<1000){
 			$data	=	array(
 							'descripcion'=>$descripcion,
+							'descripcion_ingles'=>$descripcion_ingles,
 							'dia'=>$dia,
 							'itinerario'=>$itinerario['id'],
 							'itinerario'=>$itinerario['id'],
@@ -142,12 +143,7 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
                 } ?>
             </div>
         </div>
-          
-        
-        
         <div class="row">
-                        
-            
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
@@ -160,6 +156,16 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
                                     <div class="form-group">
                                         <label>Descripción</label>
                                         <input name="descripcion" class="form-control" type="text" required>
+                                        <div class="invalid-feedback">
+                                          Por favor ingresa la descripcion del itinerario.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- descripción inglés -->
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label>Descripción en inglés</label>
+                                        <input name="descripcion_ingles" class="form-control" type="text" required>
                                         <div class="invalid-feedback">
                                           Por favor ingresa la descripcion del itinerario.
                                         </div>
@@ -243,11 +249,6 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
                     </div>
                 </div>
             </div>
-            
-            
-            
-            
-          
         </div>
             
         </section>
