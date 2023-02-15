@@ -166,7 +166,7 @@ if (isset($_REQUEST['submit']) and $_REQUEST['submit'] != "") {
                                                     </div>
                                                     <div class="col-sm-12">
                                                         <div class="form-group">
-                                                            <label>Nombre Inglés*</label>
+                                                            <label>Nombre en inglés*</label>
                                                             <input name="nombreIn" type="text" class="form-control" required>
                                                         </div>
                                                     </div>
