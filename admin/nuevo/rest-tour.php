@@ -25,6 +25,7 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
 		if($caractCount[0]['total']<10000){
 			$data	=	array(
 							'descripcion'=>($descripcion),
+                            'descripcion_ingles'=>($descripcion_ingles),
                             
 						);
 			$insert	=	$db->insert('toursRest',$data);
@@ -110,6 +111,13 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
                                 <div class="form-group">
                                     <label>Descripción</label>
                                     <input name="descripcion" type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Descripción en inglés</label>
+                                    <input name="descripcion_ingles" type="text" class="form-control">
                                 </div>
                             </div>
                         </div>
