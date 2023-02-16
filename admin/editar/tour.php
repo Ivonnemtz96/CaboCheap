@@ -659,11 +659,6 @@ $catSel = $catSel[0];
         });
     </script>
 
-    <script type="text/javascript">
-        tinymce.init({
-            selector: '#mytextarea2'
-        });
-    </script>
 
 
 </body>
