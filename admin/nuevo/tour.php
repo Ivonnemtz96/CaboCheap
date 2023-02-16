@@ -313,8 +313,6 @@ if (isset($_REQUEST['submit']) and $_REQUEST['submit'] != "") {
                                                 </div>
                                             </div>
 
-
-
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>Precio adulto</label>
