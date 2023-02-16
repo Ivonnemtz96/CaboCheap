@@ -274,16 +274,13 @@ $catSel = $catSel[0];
 
 
                     <div class="row">
-
-
-
                         <div class="col-md-12 col-lg-12">
                             <div class="card">
                                 <div class="card-header">
                                     <h4>Información básica - Tour - <?php echo ($tour['nombre']) ?></h4>
                                 </div>
                                 <div class="card-body">
-                                    <form method="post" enctype="multipart/form-data" class="needs-validation" novalidate="">
+                                    <form method="post" enctype="multipart/form-data" class="needs-validation" novalidate=""></form>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
