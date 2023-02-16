@@ -104,7 +104,9 @@ if (isset($_REQUEST['submit']) and $_REQUEST['submit'] != "") {
             extract($_REQUEST);
             $data    =    array(
                 'nombre' => $nombre,
+                'nombre_ingles' => $nombre_ingles,
                 'descripcion' => $descripcion,
+                'descripcion_ingles' => $descripcion_ingles,
                 'capacidad' => $capacidad,
                 'duracion' => $duracion,
                 'precio' => $precio,
@@ -289,6 +291,16 @@ $catSel = $catSel[0];
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>Nombre en inglés*</label>
+                                                    <input name="nombre_ingles" class="form-control" type="text" value="<?php echo ($tour['nombre_ingles'])?>" required>
+                                                    <div class="invalid-feedback">
+                                                        Por favor ingresa nombre del tour.
+                                                    </div>
+                                                </div>
+                                            </div>
                                              <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label>Categoria*</label>
@@ -376,6 +388,19 @@ $catSel = $catSel[0];
                                                 </div>
 
                                             </div>
+                                            <!-- Descripción inglés -->
+                                            <div class="col-lg-9 col-md-6">
+                                                <div class="form-group">
+                                                    <label>Descripción en inglés*</label>
+                                                    <textarea id="mytextarea2" name="descripcion_ingles" class="form-control" cols="5" rows="2" required><?php echo ($tour['descripcion_ingles']) ?></textarea>
+                                                    <div class="invalid-feedback">
+                                                        Por favor ingresa la descripción.
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
                                             <div class="col-lg-3 col-md-6">
                                                 <div class="form-group">
                                                     <label>Imagen de portada actual</label>
@@ -631,6 +656,12 @@ $catSel = $catSel[0];
     <script type="text/javascript">
         tinymce.init({
             selector: '#mytextarea'
+        });
+    </script>
+
+    <script type="text/javascript">
+        tinymce.init({
+            selector: '#mytextarea2'
         });
     </script>
 
