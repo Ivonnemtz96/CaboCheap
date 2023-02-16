@@ -108,9 +108,12 @@ if (isset($_REQUEST['submit']) and $_REQUEST['submit'] != "") {
                 'descripcion' => $descripcion,
                 'descripcion_ingles' => $descripcion_ingles,
                 'capacidad' => $capacidad,
+                'categoria' => $categoria,
                 'duracion' => $duracion,
                 'precio' => $precio,
-                'precioSube' => $precioSube,
+                'precioPromo' => $precioPromo,
+                'precioNi' => $precioNi,
+                'precioNiPromo' => $precioNiPromo,
                 'fPortada' => $codigo,
                 'fa' => $fecha,
                 'incluyeCount' => ($tour['incluyeCount']) + ($numIncluye),
@@ -626,6 +629,19 @@ $catSel = $catSel[0];
         </div>
     </div>
 
+
+    <script src="https://cdn.tiny.cloud/1/m5ug66f7s0shi1wbuoq6bdea4aeasit12v3eohxa2w823qzg/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script type="text/javascript">
+        tinymce.init({
+            selector: '#mytextarea'
+        });
+    </script>
+    <script type="text/javascript">
+        tinymce.init({
+            selector: '#mytextarea2'
+        });
+    </script>
+
     <!-- General JS Scripts -->
     <script src="/admin/assets/js/app.min.js"></script>
     <!-- JS Libraies -->
@@ -652,12 +668,7 @@ $catSel = $catSel[0];
         }
     </script>
 
-    <script src="https://cdn.tiny.cloud/1/m5ug66f7s0shi1wbuoq6bdea4aeasit12v3eohxa2w823qzg/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-    <script type="text/javascript">
-        tinymce.init({
-            selector: '#mytextarea'
-        });
-    </script>
+    
 
 
 
