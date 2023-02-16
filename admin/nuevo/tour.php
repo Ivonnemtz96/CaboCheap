@@ -316,7 +316,7 @@ if (isset($_REQUEST['submit']) and $_REQUEST['submit'] != "") {
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>Precio adulto</label>
-                                                    <input name="precio" class="form-control" type="text" required>
+                                                    <input name="precio" class="form-control" type="number" step="any" required>
                                                     <div class="invalid-feedback">
                                                         Ingresa precio.
                                                     </div>
@@ -325,7 +325,7 @@ if (isset($_REQUEST['submit']) and $_REQUEST['submit'] != "") {
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>Precio adulto promo</label>
-                                                    <input name="precioPromo" class="form-control" type="text" required>
+                                                    <input name="precioPromo" class="form-control" type="number" step="any" required>
                                                     <div class="invalid-feedback">
                                                         Ingresa precio.
                                                     </div>
@@ -334,7 +334,7 @@ if (isset($_REQUEST['submit']) and $_REQUEST['submit'] != "") {
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>Precio niño</label>
-                                                    <input name="precioNi" class="form-control" type="text" required>
+                                                    <input name="precioNi" class="form-control" type="number" step="any" required>
                                                     <div class="invalid-feedback">
                                                         Ingresa precio.
                                                     </div>
@@ -343,7 +343,7 @@ if (isset($_REQUEST['submit']) and $_REQUEST['submit'] != "") {
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>Precio niño promo</label>
-                                                    <input name="precioNiPromo" class="form-control" type="text" required>
+                                                    <input name="precioNiPromo" class="form-control" type="number" step="any" required>
                                                     <div class="invalid-feedback">
                                                         Ingresa precio.
                                                     </div>

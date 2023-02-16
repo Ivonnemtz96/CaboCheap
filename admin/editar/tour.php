@@ -283,7 +283,7 @@ $catSel = $catSel[0];
                                     <h4>Información básica - Tour - <?php echo ($tour['nombre']) ?></h4>
                                 </div>
                                 <div class="card-body">
-                                    <form method="post" enctype="multipart/form-data">
+                                    <form method="post" enctype="multipart/form-data" class="needs-validation" novalidate=""></form>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
@@ -384,7 +384,7 @@ $catSel = $catSel[0];
                                             <div class="col-lg-9 col-md-6">
                                                 <div class="form-group">
                                                     <label>Descripción*</label>
-                                                    <textarea id="mytextarea" name="descripcion" class="form-control" cols="5" rows="2" required><?php echo ($tour['descripcion']) ?></textarea>
+                                                    <textarea name="descripcion" class="form-control mytextarea" cols="5" rows="2" required><?php echo ($tour['descripcion']) ?></textarea>
                                                     <div class="invalid-feedback">
                                                         Por favor ingresa la descripción.
                                                     </div>
@@ -395,7 +395,7 @@ $catSel = $catSel[0];
                                             <div class="col-lg-9 col-md-6">
                                                 <div class="form-group">
                                                     <label>Descripción en inglés*</label>
-                                                    <textarea id="mytextarea2" name="descripcion_ingles" class="form-control" cols="5" rows="2" required><?php echo ($tour['descripcion_ingles']) ?></textarea>
+                                                    <textarea name="descripcion_ingles" class="form-control mytextarea" cols="5" rows="2" required><?php echo ($tour['descripcion_ingles']) ?></textarea>
                                                     <div class="invalid-feedback">
                                                         Por favor ingresa la descripción.
                                                     </div>
@@ -633,12 +633,7 @@ $catSel = $catSel[0];
     <script src="https://cdn.tiny.cloud/1/m5ug66f7s0shi1wbuoq6bdea4aeasit12v3eohxa2w823qzg/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script type="text/javascript">
         tinymce.init({
-            selector: '#mytextarea'
-        });
-    </script>
-    <script type="text/javascript">
-        tinymce.init({
-            selector: '#mytextarea2'
+            selector: '.mytextarea'
         });
     </script>
 
