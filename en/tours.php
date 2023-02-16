@@ -3,7 +3,7 @@
         <div class="row align-items-center justify-content-between mb-6 ">
             <div class="col-lg-7">
                 <div class="section-title text-center text-lg-start">
-                    <h4 class="mb-1 theme1">Excurciones y recorridos</h4>
+                    <h4 class="mb-1 theme1">Tours and excursions</h4>
                     <h2 class="mb-1">Ours <span class="theme">Tours</span></h2>
                     <p>A trip never to be forgotten</p>
                 </div>
@@ -60,7 +60,7 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <p class="mb-0"><span class="theme fw-bold fs-5"> $<?php echo number_format($tour['precioNiPromo'], 2); ?></span>
-                                                    <br> <span style="text-decoration:line-through;">$<?php echo number_format($tour['precioNi'], 2); ?></span> | Kid
+                                                    <br> <span style="text-decoration:line-through;">$<?php echo number_format($tour['precioNi'], 2); ?></span> | Kids
                                                 </p>
                                             </div>
                                         </div>
