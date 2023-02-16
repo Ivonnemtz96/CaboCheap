@@ -29,7 +29,7 @@ if (!($tour)) {
 
 $tour = $tour[0];
 //SACAMOS LA CATEGORIA DE ESTE TOUR
-$catSel = $db->getAllRecords('toursCate', 'nombre', 'AND id=' . $tour['categoria'] . '', 'LIMIT 1')[0];
+$catSel = $db->getAllRecords('toursCate', '*', 'AND id=' . $tour['categoria'] . '', 'LIMIT 1')[0];
 
 
 //SUMAMOS +1 A LAS IMPRECIONES DEL ANUNCIO
@@ -63,8 +63,8 @@ $update     =  $db->update('tours', $InsertData, array('id' => ($tour['id']))); 
 
 
     <header class="main_header_area">
-        <?php require_once($_SERVER["DOCUMENT_ROOT"] . "/modulos/top.php"); ?>
-        <?php require_once($_SERVER["DOCUMENT_ROOT"] . "/modulos/menu.php"); ?>
+        <?php require_once($lenguaje . "/top.php"); ?>
+        <?php require_once($lenguaje. "/menu.php"); ?>
     </header>
 
 
@@ -72,7 +72,7 @@ $update     =  $db->update('tours', $InsertData, array('id' => ($tour['id']))); 
     
 
 
-    <?php require_once($_SERVER["DOCUMENT_ROOT"] . "/modulos/footer.php"); ?>
+    <?php require_once($lenguaje . "/footer.php"); ?>
 
 
     <div id="back-to-top">
