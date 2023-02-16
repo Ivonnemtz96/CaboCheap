@@ -10,7 +10,7 @@
                 <div class="col-lg-6 mb-4 ps-4">
                     <div class="about-content text-center text-lg-start mb-4">
                         <h4 class="theme d-inline-block mb-0">About Us</h4>
-                        <h2 class="border-b mb-2 pb-1">Una agencia de tours en Los Cabos</h2>
+                        <h2 class="border-b mb-2 pb-1">A tour agency in Los Cabos</h2>
                         <p class="border-b mb-2 pb-2">
                             More than a tour agency, we CREATE EXPERIENCES. We are proudly locals and we have more than
                             15 years creating memories and unforgettable moments in our wonderful destination, offering
