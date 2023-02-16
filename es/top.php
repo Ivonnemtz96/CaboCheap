@@ -18,8 +18,8 @@
 
         <div class="links float-right">
             <ul>
-                <li><a href="#" class="white"><img style="width: 1.8rem;" src="/images/eua.png" alt=""></a></li>
-                <li><a href="#" class="white"><img style="width: 1.8rem;" src="/images/espana.png" alt=""></a></li>
+                <li><a href="?lang=en" class="white"><img style="width: 1.8rem;" src="/images/eua.png" alt=""></a></li>
+                <li><a href="?lang=es" class="white"><img style="width: 1.8rem;" src="/images/espana.png" alt=""></a></li>
             </ul>
         </div>
     </div>
