@@ -8,7 +8,7 @@
                 <div class="row d-flex align-items-center justify-content-between">
                     <div class="col-lg-12">
                         <div class="form-group mb-0 text-center">
-                            <a href="#" class="nir-btn w-100"><i class="fa fa-search mr-2"></i> Buscar Tours</a>
+                            <a href="/tours" class="nir-btn w-100"><i class="fa fa-search mr-2"></i> Buscar Tours</a>
                         </div>
                     </div>
                 </div>
