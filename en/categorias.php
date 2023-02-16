@@ -12,7 +12,7 @@
             <div class="category-item box-shadow p-3 py-4 text-center bg-white rounded overflow-hidden">
                 <div class="trending-topic-content">
                     <img src="/upload/categorias/<?php echo (strftime("%Y/%m", strtotime(($categoria['fr']))));?>/<?php echo ($categoria['imagen']) ?>.png" class="mb-1 d-inline-block" alt="">
-                    <h4 class="mb-0"><a href="/tours"><?php echo ($categoria['nombre']); ?></a></h4>
+                    <h4 class="mb-0"><a href="/tours"><?php echo ($categoria['nombreIn']); ?></a></h4>
                 </div>
             </div>
         </div>
