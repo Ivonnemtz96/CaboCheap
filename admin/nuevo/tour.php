@@ -274,7 +274,7 @@ if (isset($_REQUEST['submit']) and $_REQUEST['submit'] != "") {
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-4">
+                                            <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>Categoria*</label>
                                                     <select name="categoria" class="form-control selectric" required>
@@ -293,7 +293,29 @@ if (isset($_REQUEST['submit']) and $_REQUEST['submit'] != "") {
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label>Categoria en inglés*</label>
+                                                    <select name="categoria" class="form-control selectric" required>
+                                                        <option selected disabled>Selecciona una categoría</option>
+                                                        <?php
+                                                        $catData = $db->getAllRecords('toursCate', '*', ' ORDER BY nombre ASC');
+                                                        if (count($catData) > 0) {
+                                                            $y    =    '';
+                                                            foreach ($catData as $categoria) {
+                                                                $y++; ?>
+                                                                <option value="<?php echo ($categoria['id']); ?>"><?php echo ($categoria['nombreIn']); ?></option>
+                                                        <?php
+                                                            }
+                                                        }
+                                                        ?>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>Capacidad (Personas)</label>
                                                     <input name="capacidad" class="form-control" type="number" required>
@@ -302,7 +324,7 @@ if (isset($_REQUEST['submit']) and $_REQUEST['submit'] != "") {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>Duración (En horas)</label>
                                                     <input name="duracion" class="form-control" type="number" required>
