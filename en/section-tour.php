@@ -8,7 +8,7 @@
                 if (count($toursData) > 0) {
                     $y    =    '';
                     foreach ($toursData as $tour) {
-                        $catSel = $db->getAllRecords('toursCate', 'nombre', 'AND id=' . $tour['categoria'] . '', 'LIMIT 1')[0];
+                        $catSel = $db->getAllRecords('toursCate', '*', 'AND id=' . $tour['categoria'] . '', 'LIMIT 1')[0];
                 ?>
                     <div class="trend-full bg-white rounded box-shadow overflow-hidden p-4 mb-4">
                         <div class="row">
@@ -27,7 +27,7 @@
                                             hours
                                         </a>
                                     </h3>
-                                    <h6 class="theme mb-0"></i> <?php echo ($catSel['nombre']); ?></h6>
+                                    <h6 class="theme mb-0"></i> <?php echo ($catSel['nombreIn']); ?></h6>
                                     <p class="mt-2 mb-0">
                                         <?php echo substr(strip_tags($tour['descripcion_ingles']), 0, 130); ?>...
                                     </p>
