@@ -1,10 +1,6 @@
 <?php
     include('indexcontroller.php');
     require_once($_SERVER["DOCUMENT_ROOT"]."/config.php");
-
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +15,11 @@
     <?php require_once($_SERVER["DOCUMENT_ROOT"]."/modulos/css.php"); ?>
     
 </head>
+<?php
+if (isset($_GET)) {
+    include_once("php/msg.php");
+}
+?>
 
 <body>
     

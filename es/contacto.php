@@ -1,4 +1,5 @@
-<section class="breadcrumb-main pb-20 pt-14" style="background-image: url(/images/bg/bg1.webp?=1); background-position: center;">
+<section class="breadcrumb-main pb-20 pt-14"
+    style="background-image: url(/images/bg/bg1.webp?=1); background-position: center;">
     <div class="section-shape section-shape1 top-inherit bottom-0" style="background-image: url(/images/shape8.png);">
     </div>
     <div class="breadcrumb-outer">
@@ -53,7 +54,7 @@
                                                 <h3>Email Address</h3>
                                                 <p class="m-0">
                                                     <a href="info@cabocheaptours.com">
-                                                       info@cabocheaptours.com
+                                                        info@cabocheaptours.com
                                                     </a>
                                                 </p>
                                             </div>
@@ -65,25 +66,37 @@
                                 <div id="contact-form1" class="contact-form">
                                     <div class="col-lg-12">
                                         <div id="contactform-error-msg"></div>
-                                        <form method="post" action="#" name="contactform2" id="contactform2">
+                                        <form method="post" action="/php/contact.php" name="contactform2"
+                                            id="contactform2">
                                             <div class="form-group mb-2">
-                                                <input type="text" name="nombre" class="form-control" id="fullname" required
-                                                    placeholder="Nombre">
+                                                <input type="text" name="nombre" class="form-control" id="fullname"
+                                                    required placeholder="Nombre">
                                             </div>
                                             <div class="form-group mb-2">
-                                                <input type="email" name="email" class="form-control" id="email" required
-                                                    placeholder="Correo">
+                                                <input type="email" name="email" class="form-control" id="email"
+                                                    required placeholder="Correo">
                                             </div>
                                             <div class="form-group mb-2">
-                                                <input type="text" name="tel" class="form-control" id="phnumber" required
-                                                    placeholder="Teléfono">
+                                                <input type="text" name="tel" class="form-control" id="phnumber"
+                                                    required placeholder="Teléfono">
                                             </div>
                                             <div class="form-group mb-2">
-                                                <input type="text" name="asunto" class="form-control" id="llastname" required
-                                                    placeholder="Asunto">
+                                                <input type="text" name="asunto" class="form-control" id="llastname"
+                                                    required placeholder="Asunto">
                                             </div>
                                             <div class="textarea mb-2">
-                                                <textarea name="msj" placeholder="Escriba su mensaje" style="height: 225px;" ></textarea>
+                                                <textarea name="msj" placeholder="Escriba su mensaje"
+                                                    style="height: 225px;"></textarea>
+                                            </div>
+
+                                            <!-- Recaptcha -->
+                                            <div class="row justify-content-center"
+                                                style="margin-bottom: 3rem; margin-top:3rem;">
+                                                <div class="col-12 col-md-5">
+                                                    <div class="g-recaptcha"
+                                                        data-sitekey="6Lf92OAfAAAAAEy9m8sf2kbU0ojkdDs5CNOnaNYS"
+                                                        required></div>
+                                                </div>
                                             </div>
                                             <div class="comment-btn text-center">
                                                 <input type="submit" class="nir-btn" id="submit2" value="Enviar">

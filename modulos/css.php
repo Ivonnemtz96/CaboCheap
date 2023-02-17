@@ -7,3 +7,5 @@
     <link href="/css/plugin.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="/fonts/line-icons.css" type="text/css">
+    <!-- recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
