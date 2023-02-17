@@ -1,4 +1,4 @@
-<section class="breadcrumb-main pb-20 pt-14" style="background-image: url(images/bg/bg1.jpg);">
+<section class="breadcrumb-main pb-20 pt-14" style="background-image: url(images/bg/bg1.webp?=1);background-position: center;">
     <div class="section-shape section-shape1 top-inherit bottom-0" style="background-image: url(images/shape8.png);">
     </div>
     <div class="breadcrumb-outer">
@@ -41,7 +41,6 @@
                                             <div class="info-content">
                                                 <h3>Phone Number</h3>
                                                 <p class="m-0">977-444-666-888</p>
-                                                <p class="m-0">977-444-222-000</p>
                                             </div>
                                         </div>
                                     </div>
@@ -52,15 +51,10 @@
                                             </div>
                                             <div class="info-content ps-4">
                                                 <h3>Email Address</h3>
-                                                <p class="m-0"><a
-                                                        href="https://htmldesigntemplates.com/cdn-cgi/l/email-protection"
-                                                        class="__cf_email__"
-                                                        data-cfemail="9af3f4fcf5dae8fffbf6e9f2f3fff6feb4f9f5f7">[email&#160;protected]</a>
-                                                </p>
-                                                <p class="m-0"><a
-                                                        href="https://htmldesigntemplates.com/cdn-cgi/l/email-protection"
-                                                        class="__cf_email__"
-                                                        data-cfemail="0c6469607c4c7e696d607f6465696068226f6361">[email&#160;protected]</a>
+                                                <p class="m-0">
+                                                    <a href="mailto:info@cabocheaptours.com">
+                                                        info@cabocheaptours.com
+                                                    </a>
                                                 </p>
                                             </div>
                                         </div>
@@ -73,23 +67,23 @@
                                         <div id="contactform-error-msg"></div>
                                         <form method="post" action="#" name="contactform2" id="contactform2">
                                             <div class="form-group mb-2">
-                                                <input type="text" name="first_name" class="form-control" id="fullname"
-                                                    placeholder="First Name">
+                                                <input type="text" name="nombre" class="form-control" id="fullname" required
+                                                    placeholder="Name">
                                             </div>
                                             <div class="form-group mb-2">
-                                                <input type="text" name="last_name" class="form-control" id="llastname"
-                                                    placeholder="Last Name">
-                                            </div>
-                                            <div class="form-group mb-2">
-                                                <input type="email" name="email" class="form-control" id="email"
+                                                <input type="email" name="email" class="form-control" id="email" required
                                                     placeholder="Email">
                                             </div>
                                             <div class="form-group mb-2">
-                                                <input type="text" name="phone" class="form-control" id="phnumber"
+                                                <input type="text" name="tel" class="form-control" id="phnumber" required
                                                     placeholder="Phone">
                                             </div>
+                                            <div class="form-group mb-2">
+                                                <input type="text" name="asunto" class="form-control" id="llastname" required
+                                                    placeholder="Asunto">
+                                            </div>
                                             <div class="textarea mb-2">
-                                                <textarea name="comments" placeholder="Enter a message"
+                                                <textarea name="msj" placeholder="Enter a message"
                                                     style="height: 225px;"></textarea>
                                             </div>
                                             <div class="comment-btn text-center">
