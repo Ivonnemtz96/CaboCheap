@@ -89,7 +89,7 @@
                                                     style="height: 225px;"></textarea>
                                             </div>
                                             <!-- Recaptcha -->
-                                            <div class="row justify-content-center"
+                                            <div class="row justify-content-start"
                                                 style="margin-bottom: 3rem; margin-top:3rem;">
                                                 <div class="col-12 col-md-5">
                                                     <div class="g-recaptcha"
