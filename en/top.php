@@ -24,3 +24,12 @@
         </div>
     </div>
 </div>
+
+<div class="container p-2 d-block d-md-none text-end" style="background: #0f8ab5 !important;">
+        <div class="links ">
+            <ul>
+                <li class="m-1"><a href="?lang=en" class="white"><img style="width: 1.8rem;" src="/images/eua.png" alt=""></a></li>
+                <li class="m-1"><a href="?lang=es" class="white"><img style="width: 1.8rem;" src="/images/espana.png" alt=""></a></li>
+            </ul>
+        </div>
+</div>
