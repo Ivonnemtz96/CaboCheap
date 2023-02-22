@@ -47,8 +47,8 @@ if (isset($_REQUEST['submit'])) {
 
         $tourSel = $tourSel[0];
 
-
-       include($lenguaje."/total_precio.php");
+        //Calculamos total a pagar segun numero de adultos y menores, dependiendo del idioma será la moneda a mostrar
+        include($lenguaje."/total_precio.php");
 
         $personas = $adultos + $menores;
     }

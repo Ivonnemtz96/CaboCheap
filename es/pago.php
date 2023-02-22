@@ -45,7 +45,7 @@
                                 <tbody>
                                     <tr>
                                         <td> Total</td>
-                                        <td class="theme2">$<?php echo number_format($total, 2); ?></td>
+                                        <td class="theme2">$<?php echo number_format($total, 2); ?> MXN</td>
                                     </tr>
                                     <tr>
                                         <td>Personas</td>
@@ -53,13 +53,13 @@
                                     </tr>
                                     <tr>
                                         <td>Impuestos</td>
-                                        <td class="theme2">$<?php echo number_format(($total * 0.04), 2); ?></td>
+                                        <td class="theme2">$<?php echo number_format(($total * 0.04), 2); ?> MXN</td>
                                     </tr>
                                 </tbody>
                                 <tfoot class="bg-title">
                                     <tr>
                                         <th class="font-weight-bold white">Total</th>
-                                        <th class="font-weight-bold white">$<?php echo number_format($tipo_cambio * ($total * 1.04), 2); ?></th>
+                                        <th class="font-weight-bold white">$<?php echo number_format( ($total * 1.04), 2); ?> MXN</th>
                                     </tr>
                                 </tfoot>
                             </table>
@@ -99,7 +99,7 @@ paypal.Buttons({
     createOrder: function(data, actions) {
         return actions.order.create({
             purchase_units: [{
-                amount: { value: '<?php echo ($total*1.04)?>' },
+                amount: { value: '<?php echo number_format(($total*1.04), 2, '.', ''); ?>' },
                 description: "Estás pagando por un tour para <?php echo ($personas); if ($personas==1) { echo " persona"; } else { echo " personas" ;} ?>  en Cabo Cheap Tours"
             }]
         });

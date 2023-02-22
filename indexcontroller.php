@@ -1,5 +1,4 @@
 <?php 
-
     $tipo_cambio = 19;
     
     if (isset($_SERVER['HTTP_REFERER'])) {
@@ -8,16 +7,6 @@
         $url = "/";
     }
     
-
-
-    if(!isset ($_COOKIE["lang"])){
-    setcookie("lang","en", time() + (365 * 24 * 60 * 60));
-    header('location:' . $url . '');
-
-    }
-    else{
-        $lenguaje = $_COOKIE["lang"];
-    }
     
 
     //isset verifica que la variable exista, sin dar error
@@ -30,9 +19,18 @@
     $lenguaje = $_REQUEST["lang"];
     setcookie("lang", $lenguaje, time() + (365 * 24 * 60 * 60));
     header('location:' . $url . '');
+    exit;
 
 
     }
 
+
     
+    if(!isset ($_COOKIE["lang"])){
+        setcookie("lang","en", time() + (365 * 24 * 60 * 60));
+        header('location:' . $url . '');
     
+        }
+        else{
+            $lenguaje = $_COOKIE["lang"];
+        }

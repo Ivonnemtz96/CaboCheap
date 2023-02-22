@@ -35,9 +35,8 @@ if (isset($_REQUEST['tokenPed'])) {
 
             $tourSel = $tourSel[0];
 
-            //Calculamos total a pagar segun numero de adultos y menores
-            $total = ($tourSel['precioPromo']) * ($pedidoSel['adultos']);
-            $total += ($tourSel['precioNiPromo']) * ($pedidoSel['menores']);
+            //Calculamos total a pagar segun numero de adultos y menores, dependiendo del idioma será la moneda a mostrar
+           include($lenguaje."/calcular_pago.php");
 
             $personas = $pedidoSel['adultos'] + $pedidoSel['menores'];
     
@@ -147,8 +146,8 @@ if (isset($_REQUEST['tokenPed'])) {
 
 
     <header class="main_header_area">
-        <?php require_once($_SERVER["DOCUMENT_ROOT"] . "/modulos/top.php"); ?>
-        <?php require_once($_SERVER["DOCUMENT_ROOT"] . "/modulos/menu.php"); ?>
+        <?php require_once($lenguaje . "/top.php"); ?>
+        <?php require_once($lenguaje. "/menu.php"); ?>
     </header>
 
 

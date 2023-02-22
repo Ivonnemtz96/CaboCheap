@@ -24,42 +24,42 @@
                             </div>
 
                             <div class="trend-check border-b pb-2 mb-2">
-                                <p class="mb-0">Su selección:</p>
-                                <h6 class="mb-0">Personas <span class="float-end fw-normal"><?php echo $pedidoSel['adultos']; ?> adultos, <?php echo $pedidoSel['menores']; ?> niños</span> </h6>
+                                <p class="mb-0">Your Selection:</p>
+                                <h6 class="mb-0">Pax: <span class="float-end fw-normal"><?php echo $pedidoSel['adultos']; ?> adults, <?php echo $pedidoSel['menores']; ?> kids</span> </h6>
 
-                                <h6 class="mb-0">Fecha: <span class="float-end fw-normal"><?php echo (strftime("%d de %B del %G", strtotime($pedidoSel['fv']))); ?></span> </h6>
+                                <h6 class="mb-0">Date: <span class="float-end fw-normal"><?php echo (strftime("%d de %B del %G", strtotime($pedidoSel['fv']))); ?></span> </h6>
 
                             </div>
                             <div class="trend-check border-b pb-2 mb-2">
-                                <p class="mb-0">Sus datos:</p>
-                                <h6 class="mb-0">Nombre <span class="float-end fw-normal"><?php echo $pedidoSel['nombre']; ?></h6>
-                                <h6 class="mb-0">Correo electrónico: <span class="float-end fw-normal"><?php echo $pedidoSel['email']; ?></span> </h6>
-                                <h6 class="mb-0">Teléfono: <span class="float-end fw-normal"><?php echo $pedidoSel['telefono']; ?></span> </h6>
+                                <p class="mb-0">Your information:</p>
+                                <h6 class="mb-0">Name <span class="float-end fw-normal"><?php echo $pedidoSel['nombre']; ?></h6>
+                                <h6 class="mb-0">E-mail: <span class="float-end fw-normal"><?php echo $pedidoSel['email']; ?></span> </h6>
+                                <h6 class="mb-0">Phone: <span class="float-end fw-normal"><?php echo $pedidoSel['telefono']; ?></span> </h6>
 
 
                             </div>
                         </div>
                         <div class="sidebar-item bg-white rounded box-shadow overflow-hidden p-3 mb-4">
-                            <h4>Costos</h4>
+                            <h4>Costs</h4>
                             <table>
                                 <tbody>
                                     <tr>
                                         <td> Total</td>
-                                        <td class="theme2">$<?php echo number_format($total, 2); ?></td>
+                                        <td class="theme2">$<?php echo number_format($total, 2); ?> USD</td>
                                     </tr>
                                     <tr>
-                                        <td>Personas</td>
+                                        <td>Pax</td>
                                         <td class="theme2"><?php echo $personas; ?></td>
                                     </tr>
                                     <tr>
-                                        <td>Impuestos</td>
-                                        <td class="theme2">$<?php echo number_format(($total * 0.04), 2); ?></td>
+                                        <td>Taxes</td>
+                                        <td class="theme2">$<?php echo number_format(($total * 0.04), 2); ?> USD</td>
                                     </tr>
                                 </tbody>
                                 <tfoot class="bg-title">
                                     <tr>
                                         <th class="font-weight-bold white">Total</th>
-                                        <th class="font-weight-bold white">$<?php echo number_format(($total * 1.04), 2); ?></th>
+                                        <th class="font-weight-bold white">$<?php echo number_format(($total * 1.04), 2); ?> USD</th>
                                     </tr>
                                 </tfoot>
                             </table>
@@ -74,7 +74,7 @@
     </section>
 
 
-    <?php require_once($_SERVER["DOCUMENT_ROOT"] . "/modulos/footer.php"); ?>
+    <?php require_once($lenguaje . "/footer.php"); ?>
 
 
     <div id="back-to-top">
@@ -83,7 +83,7 @@
 
     <?php require_once($_SERVER["DOCUMENT_ROOT"] . "/modulos/js.php"); ?>
 
-    <script src="https://www.paypal.com/sdk/js?client-id=AZypmdhWpEOkIEmyEeJYHGjPCOmZRcqu86qmpk9FA0w8QS_w26HR4f9VuVfDM5wL6i9G_rCLo6aJIMqB&currency=MXN"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AZypmdhWpEOkIEmyEeJYHGjPCOmZRcqu86qmpk9FA0w8QS_w26HR4f9VuVfDM5wL6i9G_rCLo6aJIMqB&currency=USD"></script>
 
 <script>
 // Render the PayPal button into #paypal-button-container
@@ -99,8 +99,8 @@ paypal.Buttons({
     createOrder: function(data, actions) {
         return actions.order.create({
             purchase_units: [{
-                amount: { value: '<?php echo ($total*1.04)?>' },
-                description: "Estás pagando por un tour para <?php echo ($personas); if ($personas==1) { echo " persona"; } else { echo " personas" ;} ?>  en Cabo Cheap Tours"
+                amount: { value: '<?php echo number_format(($total*1.04), 2, '.', ''); ?>' },
+                description: "You are paying for a tour to <?php echo ($personas); if ($personas==1) { echo " Pax"; } else { echo " Pax" ;} ?>  in Cabo Cheap Tours"
             }]
         });
     },
