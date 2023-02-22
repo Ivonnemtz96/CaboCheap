@@ -1,5 +1,7 @@
 <?php 
 
+    $tipo_cambio = 19;
+    
     if (isset($_SERVER['HTTP_REFERER'])) {
         $url = $_SERVER['HTTP_REFERER'];
     } else {

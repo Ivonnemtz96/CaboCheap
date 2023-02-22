@@ -18,7 +18,7 @@
                             un sinfín de atractivos naturales como el famoso "Arco", que separa el Mar de Cortés del
                             Océano Pacífico. <br>
                             En Los Cabos hay algo qué hacer para todos: pesca, golf, buceo, snorkel,
-                            kayal, paseos a caballo o camello y por supuesto la ya famosa temporada de avistamiento
+                            kayak, paseos a caballo o camello y por supuesto la ya famosa temporada de avistamiento de
                             ballenas. <br>
                             Si estás planeando tu próxima aventura de viaje, listo para divertirte con amigos o familia,
                             ¡Cabo Cheap Tours sin duda será tu mejor opción!</p>

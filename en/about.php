@@ -17,7 +17,7 @@
                             the most affordable prices for every budget. <br>
 
                             Los Cabos is a true paradise, where the desert and the ocean come together. When you visit
-                            Los Cabos, you will be sable to enjoy endless natural attractions such as the famous "Land's
+                            Los Cabos, you will be able to enjoy endless natural attractions such as the famous "Land's
                             End Arch", that crowns the tip of Baja California península, where the Sea of Cortes meets
                             the Pacific Ocean. <br>
                             In Los Cabos, there is something for everyone: fishing, golf, diving, snorkeling, kayaking,
